@@ -1,0 +1,117 @@
+.gpt3__header {
+  display: flex;
+}
+.gpt3__header-content {
+  display: flex;
+  align-items: flex-start;
+}
+.gpt3__header-content_left {
+  width: 50%;
+  padding: 6rem 0px;
+}
+.gpt3__header-content h1 {
+  font-weight: 800;
+  font-size: calc(34px + 0.890625vw);
+}
+.gpt3__header-content p {
+  color: var(--color-text);
+  margin-top: 1.5rem;
+}
+.gpt__header-content__input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+  padding-right: 1rem;
+}
+.gpt__header-content__input input {
+  flex: 2;
+  background: rgba(4, 12, 24, 0.7);
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 25px;
+  color: #fff;
+}
+.gpt__header-content__input button {
+  flex: 0.5;
+  width: 100%;
+  color: #fff;
+  background: #ff4820;
+  font-family: var(--font-family);
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0 1rem;
+}
+.gpt3__header-content__people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.gpt3__header-content__people img {
+  height: 38px;
+  width: 181px;
+  margin: 10px 0;
+}
+.gpt3__header-content__people p {
+  margin: 0 0 0 1rem;
+  color: #fff;
+  text-align: center;
+}
+.gpt3__header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gpt3__header-image img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt3__header-content_left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .gpt3__header-image {
+    width: 65%;
+    margin: 0 auto;
+  }
+  .gpt3__header-content {
+    flex-direction: column;
+  }
+  .gpt3__header {
+    flex-direction: column;
+  }
+  .gpt3__header-content {
+    margin: 0 0 3rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .gpt3__header-content_left {
+    width: 95%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  .gpt3__header-image {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .gpt3__header-content__people {
+    flex-direction: column;
+  }
+  .gpt3__header-content__people p {
+    margin: 5px auto;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .gpt3__header-image img {
+    width: 85%;
+  }
+}
