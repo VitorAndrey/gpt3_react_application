@@ -6,6 +6,7 @@
 .gpt3__blog {
   display: flex;
   flex-direction: column;
+  padding-bottom: 4rem;
 }
 .gpt3__blog-container {
   display: flex;
